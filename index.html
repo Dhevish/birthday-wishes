@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Gomathi 💗</title>
+<style>
+:root{--bg:#FFF5F7;--soft:#F8DDE5;--blush:#F4C2D0;--rose:#EFA3B8;--deep:#C65D7B;--text:#593744;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#FFF5F7;--text:#593744}}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--soft));color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden;min-height:100vh}
+h1,h2,.serif{font-family:"Playfair Display",Georgia,"Times New Roman",serif;color:var(--deep)}
+button{font:inherit;cursor:pointer;min-height:44px;border:0}
+:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
+.chap{display:none;min-height:100vh;min-height:100dvh;position:relative}
+.chap.on{display:block;animation:fade .7s ease}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.fl{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.fl i{position:absolute;bottom:-30px;font-style:normal;opacity:.5;animation:up linear infinite}
+@keyframes up{to{transform:translateY(-110vh) rotate(25deg)}}
+.btn{background:linear-gradient(135deg,var(--rose),var(--deep));color:#fff;border-radius:999px;padding:10px 22px;box-shadow:0 6px 16px #c65d7b55;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:scale(.95)}
+.btn.alt{background:#fff;color:var(--deep);border:2px solid var(--rose)}
+/* envelope */
+#c1{display:none;place-items:center;text-align:center;padding:20px}
+#c1.on{display:grid}
+.env{position:relative;width:min(300px,80vw);height:min(200px,53vw);margin:30px auto 20px;cursor:pointer;background:none;padding:0;min-height:0;filter:drop-shadow(0 12px 18px #c65d7b44)}
+.env .body{position:absolute;inset:0;background:linear-gradient(#fff7f0,#fbe4e8);border-radius:8px}
+.env .paper{position:absolute;left:8%;right:8%;top:6%;bottom:6%;background:#fff;border-radius:4px;transition:transform .9s ease;z-index:1}
+.env .front{position:absolute;inset:0;z-index:2;background:linear-gradient(135deg,transparent 49.5%,#f6d3dc 50%) left/50% 100% no-repeat,linear-gradient(225deg,transparent 49.5%,#f6d3dc 50%) right/50% 100% no-repeat;border-radius:8px}
+.env .flap{position:absolute;left:0;right:0;top:0;height:60%;z-index:3;background:linear-gradient(#f9dbe3,#f3c4d1);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .7s ease}
+.seal{position:absolute;left:50%;top:48%;width:54px;height:54px;margin:-27px;z-index:4;font-size:46px;line-height:54px;text-align:center;filter:drop-shadow(0 0 10px #ff6b8e);animation:pulse 2s infinite;color:#b8304f}
+.env.wig{animation:wig .5s}
+@keyframes wig{25%{transform:translateX(-8px) rotate(-2deg)}75%{transform:translateX(8px) rotate(2deg)}}
+@keyframes pulse{50%{transform:scale(1.2)}}
+.env.open .flap{transform:rotateX(180deg);z-index:0}
+.env.open .paper{transform:translateY(-70%)}
+.env.open .seal{opacity:0;transform:scale(2);transition:.5s}
+#tease{min-height:1.6em;color:var(--deep);font-weight:600}
+/* letter */
+.wrap{position:relative;z-index:1;max-width:640px;margin:0 auto;padding:40px 20px 60px}
+.card{background:#fffdfd;border-radius:18px;padding:clamp(20px,5vw,40px);box-shadow:0 10px 40px #c65d7b33;line-height:1.75;font-size:clamp(1rem,2.5vw,1.1rem)}
+.card p{margin:0 0 1em}
+.rv{opacity:0;transform:translateY(16px);transition:.7s}.rv.in{opacity:1;transform:none}
+h1{font-size:clamp(1.8rem,7vw,2.8rem);text-align:center;margin:.2em 0 .6em}
+.hint{text-align:center;color:var(--deep);animation:bob 2s infinite;margin-top:30px}
+@keyframes bob{50%{transform:translateY(6px)}}
+#prog{position:fixed;top:0;left:0;height:4px;background:var(--deep);z-index:20;width:0}
+/* heart */
+#hs{width:min(460px,94vw);display:block;margin:0 auto;cursor:pointer;background:none;border:0;padding:0;animation:beat 1.4s infinite;filter:drop-shadow(0 0 12px #ef7ea0aa)}
+#hs.pause{animation:none}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.04)}30%{transform:scale(.99)}}
+#hs text{font:700 15px Georgia,serif;text-anchor:middle;dominant-baseline:central}
+.center{text-align:center}
+/* questions */
+#c4{background:linear-gradient(160deg,#fde8ee,var(--blush))}
+.q{position:relative;background:#ffffffcc;border-radius:16px;padding:14px 16px;margin:14px 0;min-height:170px;overflow:hidden;box-shadow:0 6px 18px #c65d7b22}
+.q h2{font-size:1.2rem;margin:0 0 4px}
+.qm{min-height:1.5em;font-size:.95rem}
+.qb{position:absolute;left:0;right:0;bottom:12px;display:flex;justify-content:center}
+.yes{transform-origin:center bottom;transition:transform .3s}
+.no{position:absolute;transition:all .4s ease;background:#fff;color:var(--text);border:2px solid var(--blush);border-radius:999px;padding:6px 16px;z-index:2}
+.q.one{min-height:0;padding:20px 18px 18px;margin:8px 0}
+.ql{margin:0 0 10px;padding-left:1.6em;font-family:Georgia,serif;font-size:clamp(1.15rem,4.5vw,1.5rem);color:var(--deep);line-height:1.9}
+.play{position:relative;height:200px}.play .qb{bottom:0;gap:12px}.sp{width:76px;height:44px;flex:none}
+/* modal */
+#mod{position:fixed;inset:0;background:#593744aa;display:none;align-items:center;justify-content:center;z-index:50;padding:12px;overflow-y:auto}
+#mod.on{display:flex}
+.mbox{background:linear-gradient(#fff,#fff0f4);border-radius:22px;max-width:520px;width:100%;max-height:94vh;overflow-y:auto;padding:24px 18px;text-align:center;position:relative;animation:pop .5s ease}
+@keyframes pop{from{opacity:0;transform:scale(.85)}}
+.x{position:absolute;right:10px;top:10px;background:var(--soft);border-radius:50%;width:44px;color:var(--deep);font-size:1.2rem}
+.msg{background:#fff;border:2px dashed var(--rose);border-radius:14px;padding:14px;text-align:left;margin:10px 0}
+.row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:8px 0}
+.cat{width:min(240px,70%);animation:bob 2.5s infinite}
+.p{position:fixed;pointer-events:none;z-index:60;animation:fly 1.6s ease-out forwards}
+@keyframes fly{to{transform:translate(var(--dx),var(--dy)) scale(var(--s,1)) rotate(180deg);opacity:0}}
+#toast{min-height:1.4em;color:var(--deep);font-weight:600}
+nav.t{position:fixed;top:8px;right:8px;z-index:30;display:flex;gap:6px}
+nav.t button{padding:4px 12px;font-size:.85rem;min-height:36px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style></head><body>
+<div id="prog"></div>
+<div class="fl" id="fl" aria-hidden="true"></div>
+<nav class="t" id="nav" hidden><button class="btn alt" id="back">← Back</button><button class="btn alt" id="restart">Restart</button></nav>
+<main>
+<section class="chap on" id="c1"><div>
+<p class="serif" style="font-size:clamp(1.2rem,4vw,1.6rem);color:var(--deep);margin:0">A little letter, just for you, Gomathi.</p>
+<button class="env" id="env" aria-label="Sealed envelope"><div class="body"></div><div class="paper"></div><div class="front"></div><div class="flap"></div><div class="seal">❤</div></button>
+<p id="tease" aria-live="polite"></p>
+<button class="btn" id="openbtn">Open your letter</button>
+</div></section>
+
+<section class="chap" id="c2"><div class="wrap">
+<h1>Happy Birthday, Gomathi! 🎂💗</h1>
+<div class="card" id="letter">
+<p class="rv">My dearest Gomathi,</p>
+<p class="rv">Happy Birthday to the girl who holds such a special place in my heart. 💗</p>
+<p class="rv">If I could give you one thing in this world, it would be the ability to see yourself through my eyes. Then you would understand how beautiful, precious, and irreplaceable you are to me.</p>
+<p class="rv">You are more than just a person in my life. You are a beautiful part of my happiest thoughts, my favorite memories, and the dreams I quietly carry in my heart.</p>
+<p class="rv">No matter how ordinary a day may seem, the thought of you can make it feel special. Your smile means more to me than I can ever explain, and your happiness will always matter to me.</p>
+<p class="rv">On your birthday, I wish you a life filled with laughter, peace, success, beautiful surprises, and every little thing that makes your heart happy. I hope you always remember how worthy you are of love, kindness, and happiness.</p>
+<p class="rv">And if there is one thing I want you to know today, it is this: you are one of the most beautiful parts of my life, Gomathi. You are not replaceable, and the memories we share mean more to me than words can say.</p>
+<p class="rv">Whatever tomorrow brings, I will always be grateful that you became a part of my story.</p>
+<p class="rv">Happy Birthday, my special girl. 🌷</p>
+<p class="rv">With all the love in my heart,</p>
+<p class="rv serif" style="color:var(--deep)">Yours lovingly,<br>Dheveesh ❤️</p>
+</div>
+<p class="hint">Psst… there is something else I made just for you. Keep scrolling. ↓</p>
+<div style="margin-top:60px" class="center">
+<button id="hs" aria-label="Heart made of the letters of GOMATHI. Tap to open the next surprise"></button>
+<p class="serif" style="font-size:1.2rem;color:var(--deep)">Every little letter carries a little piece of my heart. 💗</p>
+<p class="hint">Gomathi, tap the heart and see what is waiting for you…</p>
+</div></div></section>
+
+<section class="chap" id="c4"><div class="wrap">
+<h1>One little question from my heart to yours… 💌</h1>
+<div id="qs"></div>
+</div></section>
+</main>
+
+<div id="mod" role="dialog" aria-modal="true" aria-labelledby="mt"><div class="mbox" id="mbox">
+<button class="x" id="mx" aria-label="Close celebration">✕</button>
+<h2 id="mt" style="font-size:1.6rem;margin:6px 30px">Congratulations, Gomathi! 💗</h2>
+<p>You and Dheveesh have a beautiful new chapter to look forward to! ❤️</p>
+<svg class="cat" viewBox="0 0 200 220" role="img" aria-label="A cute cat holding a big bouquet of roses">
+<path d="M45 70 L50 25 L85 50Z M155 70 L150 25 L115 50Z" fill="#f2b680"/><path d="M52 55 L55 37 L72 50Z M148 55 L145 37 L128 50Z" fill="#f8c7d2"/>
+<ellipse cx="100" cy="85" rx="58" ry="50" fill="#f6c28f"/><path d="M70 45q5 12 0 20M100 40v18M130 45q-5 12 0 20" stroke="#d98f56" stroke-width="5" fill="none" stroke-linecap="round"/>
+<ellipse cx="80" cy="85" rx="8" ry="10" fill="#3b2a2a"/><ellipse cx="120" cy="85" rx="8" ry="10" fill="#3b2a2a"/><circle cx="83" cy="81" r="3" fill="#fff"/><circle cx="123" cy="81" r="3" fill="#fff"/>
+<path d="M94 98h12l-6 7z" fill="#e57a96"/><path d="M100 105q-8 10-16 4M100 105q8 10 16 4" stroke="#7a4a4a" stroke-width="2.5" fill="none"/>
+<circle cx="64" cy="100" r="8" fill="#f9a8b8" opacity=".6"/><circle cx="136" cy="100" r="8" fill="#f9a8b8" opacity=".6"/>
+<path d="M30 92h25M30 102l25-4M170 92h-25M170 102l-25-4" stroke="#fff" stroke-width="2"/>
+<ellipse cx="100" cy="150" rx="46" ry="30" fill="#f6c28f"/>
+<path d="M60 215 L100 120 L140 215Z" fill="#f8d4de"/><path d="M82 215 L100 150 L118 215Z" fill="#f4b6c6"/><path d="M92 165h16l-8 14z" fill="#c65d7b"/>
+<g><circle cx="78" cy="132" r="15" fill="#d6304f"/><circle cx="100" cy="122" r="17" fill="#e8506f"/><circle cx="123" cy="132" r="15" fill="#f4849b"/><circle cx="90" cy="142" r="13" fill="#f4849b"/><circle cx="112" cy="144" r="13" fill="#d6304f"/></g>
+<g fill="none" stroke="#a02040" stroke-width="2"><path d="M72 132q6-6 12 0M95 122q6-6 12 0M118 132q6-6 12 0M85 142q5-5 10 0M107 144q5-5 10 0"/></g>
+<g fill="#6aa66a"><ellipse cx="62" cy="122" rx="9" ry="4" transform="rotate(-30 62 122)"/><ellipse cx="138" cy="122" rx="9" ry="4" transform="rotate(30 138 122)"/></g>
+<ellipse cx="62" cy="152" rx="14" ry="10" fill="#f6c28f"/><ellipse cx="138" cy="152" rx="14" ry="10" fill="#f6c28f"/>
+</svg>
+<h2 style="font-size:1.25rem">A Little Message from Gomathi 💌</h2>
+<div class="msg" id="am"></div>
+<p style="font-size:.9rem">Copy this little message and send it to Dheveesh wherever you like. 💌</p>
+<div class="row"><button class="btn" id="share">Share with Dheveesh</button></div>
+<div id="sp" class="row" hidden><a class="btn alt" id="wa" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;text-decoration:none">WhatsApp</a><button class="btn alt" id="copy2">Copy My Message</button></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<div class="row"><button class="btn alt" id="replay">Replay 💗</button><button class="btn alt" id="mc">Close</button></div>
+</div></div>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s),RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const chaps=['c1','c2','c4'];let cur='c1',state={taps:0,opening:false,lock:false,sel:null,scale:{},no:{},msgI:{}};
+// floating hearts
+const fl=$('#fl');if(!RM)for(let i=0;i<14;i++){const e=document.createElement('i');e.textContent=['💗','💕','✨','🌸'][i%4];e.style.cssText=`left:${Math.random()*100}%;font-size:${14+Math.random()*16}px;animation-duration:${9+Math.random()*10}s;animation-delay:${-Math.random()*15}s`;fl.appendChild(e)}
+function show(id,scroll=true){cur=id;chaps.forEach(c=>$('#'+c).classList.toggle('on',c===id));$('#nav').hidden=id==='c1';if(id==='c4')placeNo();if(scroll)scrollTo(0,0)}
+function burst(x,y,n=18,em=['💗','❤️','💕','🌹']){if(RM)n=4;for(let i=0;i<n;i++){const p=document.createElement('span');p.className='p';p.textContent=em[i%em.length];const a=Math.random()*6.28,d=60+Math.random()*140;p.style.cssText=`left:${x}px;top:${y}px;font-size:${14+Math.random()*14}px;--dx:${Math.cos(a)*d}px;--dy:${Math.sin(a)*d}px;--s:${1+Math.random()*2}`;document.body.appendChild(p);setTimeout(()=>p.remove(),1700)}}
+const ctr=el=>{const r=el.getBoundingClientRect();return[r.left+r.width/2,r.top+r.height/2]};
+// envelope
+const teases=['Hehe, try again, birthday girl! 💗','Almost… but not yet! 🌷','So eager! One more little try 💕','You are so patient, Gomathi 🥺','Okay okay, it is ready for you! ✨'];
+function openEnv(){if(state.opening)return;state.opening=true;const e=$('#env');e.classList.add('open');burst(...ctr(e),24);$('#tease').textContent='Opening your letter… 💌';setTimeout(()=>show('c2'),RM?100:1600)}
+$('#env').onclick=()=>{if(state.opening)return;state.taps++;if(state.taps>=4)return openEnv();const e=$('#env');e.classList.remove('wig');void e.offsetWidth;e.classList.add('wig');$('#tease').textContent=teases[state.taps-1]};
+$('#openbtn').onclick=openEnv;
+// reveal + progress
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.2});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+addEventListener('scroll',()=>{const h=document.documentElement;$('#prog').style.width=(scrollY/Math.max(1,h.scrollHeight-innerHeight)*100)+'%'},{passive:true});
+// heart from GOMATHI
+(function(){const W='GOMATHI',cols=23,rows=21,cw=18,ch=18,svg=[];let k=0;
+for(let r=0;r<rows;r++)for(let c=0;c<cols;c++){const x=(c-(cols-1)/2)/(cols/2)*1.25,y=((rows/2-1.5)-r)/(rows/2)*1.3;const v=Math.pow(x*x+y*y-1,3)-x*x*y*y*y;if(v<=0){const sh=['#F4C2D0','#EFA3B8','#E2748F','#C65D7B','#B8304F'][(r+c+k)%5];svg.push(`<text x="${c*cw+cw/2}" y="${r*ch+ch/2}" fill="${sh}">${W[k%7]}</text>`);k++}}
+$('#hs').innerHTML=`<svg viewBox="0 0 ${cols*cw} ${rows*ch}" aria-hidden="true" style="width:100%;height:auto">${svg.join('')}</svg>`})();
+$('#hs').onclick=()=>{if(state.lock)return;state.lock=true;const h=$('#hs');h.classList.add('pause');burst(...ctr(h),36);document.body.style.transition='background .6s';setTimeout(()=>{show('c4');h.classList.remove('pause');state.lock=false},RM?100:1100)};
+// questions
+const Q=['Can We Start Again?','Can We Talk Again?','Can We Dream Again?','Can We Trust Again?','Can We Love Again?'];
+const NM=['Are you sure, Gomathi? 🥺','Give this little heart another thought. 💗','My heart is still hoping…','One more chance? 🌷'];
+const SL=[{r:'0',t:'0'},{l:'0',t:'0'},{l:'50%',t:'0',m:1},{r:'0',t:'62px'},{l:'0',t:'62px'}];
+$('#qs').innerHTML=`<div class="q one"><ol class="ql">${Q.map(q=>`<li>${q}</li>`).join('')}</ol><div class="qm" aria-live="polite"></div><div class="play"><button class="no" id="no" aria-label="No">NO</button><div class="qb"><button class="btn yes" id="yes" aria-label="Yes to all five questions">💗 YES</button><span class="sp"></span></div></div></div>`;
+let nn=0,sc=1;
+function placeNo(){const b=$('#no');b.style.cssText='';if(!nn){const p=$('.sp'),o=p.offsetParent;if(!o)return;b.style.left=(p.offsetLeft+o.offsetLeft)+'px';b.style.top=(p.offsetTop+o.offsetTop)+'px';return}const s=SL[(nn-1)%5];if(s.l)b.style.left=s.l;if(s.r)b.style.right=s.r;b.style.top=s.t;if(s.m)b.style.transform='translateX(-50%)'}
+function resetQ(){nn=0;sc=1;$('#yes').style.transform='';$('.qm').textContent='';placeNo()}
+placeNo();
+$('#yes').onclick=e=>yes(e);
+$('#no').onclick=()=>{nn++;sc+=.2;$('#yes').style.transform=`scale(${sc})`;$('.qm').textContent=NM[(nn-1)%4];placeNo();burst(...ctr($('#yes')),8)};
+addEventListener('resize',placeNo);
+// modal
+let last=null;
+function msgText(){return`Dear Dheveesh, I am willing to give us another chance. I want us to start again, talk openly, dream together, trust slowly, and love with kindness. Let’s take it one step at a time, with patience and care. ❤️ — Gomathi`}
+function shareText(){return`${Q.join(' ')}\n\n${msgText()}\n\n💌 A birthday surprise from Gomathi & Dheveesh`}
+function yes(e){if(state.lock)return;state.lock=true;last=e.currentTarget;$('#am').textContent=msgText();$('#sp').hidden=true;$('#toast').textContent='';
+const t=encodeURIComponent(shareText());$('#wa').href='https://wa.me/?text='+t;
+$('#mod').classList.add('on');$('#mx').focus();burst(innerWidth/2,innerHeight/3,36,['💗','🌹','🌸','🎉','❤️']);setTimeout(()=>state.lock=false,600)}
+function closeM(){$('#mod').classList.remove('on');if(last)last.focus()}
+$('#mx').onclick=$('#mc').onclick=closeM;
+$('#mod').onclick=e=>{if(e.target.id==='mod')closeM()};
+addEventListener('keydown',e=>{const m=$('#mod');if(!m.classList.contains('on'))return;if(e.key==='Escape')closeM();if(e.key==='Tab'){const f=[...m.querySelectorAll('button:not([hidden]),a[href]')].filter(x=>x.offsetParent);const a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}});
+async function copy(){const t=shareText();try{await navigator.clipboard.writeText(t);toast('Message copied! 💗')}catch{try{const a=document.createElement('textarea');a.value=t;a.style.cssText='position:fixed;opacity:0';document.body.appendChild(a);a.select();const ok=document.execCommand('copy');a.remove();toast(ok?'Message copied! 💗':'Could not copy. Please select the message and copy it manually.')}catch{toast('Could not copy. Please select the message and copy it manually.')}}}
+function toast(s){$('#toast').textContent=s}
+$('#copy2').onclick=copy;
+$('#share').onclick=async()=>{if(navigator.share){try{await navigator.share({title:'A little message for Dheveesh 💌',text:shareText()});return}catch(e){if(e.name==='AbortError')return}}$('#sp').hidden=false;toast('Choose how you would like to send it 💗')};
+$('#replay').onclick=()=>{closeM();show('c2')};
+$('#back').onclick=()=>{if(cur==='c4')show('c2');else if(cur==='c2')show('c1')};
+$('#restart').onclick=()=>{closeM();state.taps=0;state.opening=false;$('#env').classList.remove('open');$('#tease').textContent='';resetQ();show('c1')};
+})();
+</script></body></html>
